@@ -16,6 +16,7 @@ export class GetAPIService {
 
   pageCount: number = 1;
 
+  //Gets the inital movies
   getMovies = (): any => {
     let url =
       'https://api.themoviedb.org/3/discover/movie?api_key=80293729e43a58b6df6bccaa278d8358&sort_by=vote_average.asc&vote_count.gte=50&page=' +
