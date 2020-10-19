@@ -1,0 +1,64 @@
+<div class="filterResultsContainer">
+    <div class="searchContainer">
+        <input type="text"
+        id="searchResults"
+        placeholder="Search by Title">
+        <button id="searchButton">
+            <img src="./../../assets/icon-search.svg">
+        </button>
+    </div>
+    
+
+        <h3 class="criteriaHeading">
+            <img src="./../../assets/icon-genre.svg" class="headerImage">
+            Genre
+        </h3>
+
+        <div class="genreContainer">
+            <ol>
+                <li
+                *ngFor = "let item of genresArray; index as i ">
+                <input type="checkbox" id="genreName" [name]="item.name">
+                <label [for]="item.name">{{ item.name }}</label>
+                </li>
+            </ol>
+
+    </div>
+    
+    <div class="releaseDateContainer">
+        <h3 class="criteriaHeading">
+            <img src="./../../assets/icon-genre.svg" class="headerImage">
+            Release Date
+        </h3>
+        <div class="yearToYearContainer">
+            <select name="" id=""></select>
+            <p>to</p>
+            <select name="" id=""></select>
+        </div>
+    </div>
+    
+    <div class="runTimeContainer">
+        <h3 class="criteriaHeading">
+            <img src="./../../assets/icon-duration.svg" class="headerImage">
+            Run Time
+        </h3>
+        <ul>
+            <div class="shortContainer">
+                <input type="checkbox" id="shortLength" name="shortLength"> <label for="shortLength">Short (< 1 hour)</label>
+            </div>
+            <div class="averageContainer">
+                <input type="checkbox" id="averageLength" name="averageLength"> <label for="averageLength">Average ( 1-2 hours)</label> 
+            </div>
+            <div class="longContainer">
+                <input type="checkbox" id="longLength" name="longLength"> <label for="longLength">Long (> 2 hours)</label>
+            </div>
+        </ul>
+    </div>
+
+    <div class="buttonsContainer">
+        <button id="submitButton">Submit</button>
+        <button id="clearButton">Clear</button>
+    </div>
+
+</div>
+

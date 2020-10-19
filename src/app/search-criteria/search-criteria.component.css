@@ -1,0 +1,124 @@
+.filterResultsContainer {
+    width: 300px;
+    margin-top: 100px;
+    position: fixed;
+    margin-right: 75px;
+}
+
+.searchContainer {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#searchResults {
+    width: 84%;
+    border: 1px solid red;
+    border-radius: 5px;
+    box-shadow: 3px 3px red;
+    padding-left: 16px;
+}
+
+#searchButton {
+    display: flex;
+    justify-content: center;
+    background-color: #333333;
+    border: none;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+#searchIcon {
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(14deg) brightness(97%) contrast(107%);
+}
+
+.criteriaHeading {
+    display: flex;
+    flex-direction: row;
+    align-content: baseline;
+    font-family: 'Lobster', cursive;
+    font-weight: lighter;
+    color: white;
+    background-color: #243d94;
+    padding: 5px 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.headerImage {
+    margin-right: 10px;
+}
+
+ul {
+    padding-left: 15px;
+}
+
+li {
+    list-style: none;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.genreContainer {
+    column-count: 2;
+}
+
+.releaseDateContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.yearToYearContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+select {
+    width: 80px;
+    height: 30px;
+    margin: 0px 15px;
+}
+
+.buttonsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+#submitButton {
+    display: flex;
+    justify-content: center;
+    width: 45%;
+    font-family: 'Lobster', cursive;
+    font-size: 18px;
+    color: white;
+    border: none;
+    background-color: #243d94;
+    border-radius: 5px;
+    padding: 5px 0px;
+}
+
+#clearButton {
+    display: flex;
+    justify-content: center;
+    width: 45%;
+    font-family: 'Lobster', cursive;
+    font-size: 18px;
+    color: #243d94;
+    background-color: white;
+    border: 2px solid #243d94;
+    border-radius: 5px;
+    padding: 5px 0px;
+}
+
+.shortLength, .averageLength, .longLength {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+label {
+    padding-left: 8px;
+}
