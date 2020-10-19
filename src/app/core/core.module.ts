@@ -6,26 +6,21 @@ import { SearchCriteriaComponent } from '../search-criteria/search-criteria.comp
 import { MovieListComponent } from '../movie-list/movie-list.component';
 import { WatchlistPageComponent } from '../watchlist-page/watchlist-page.component';
 import { TopNavComponent } from '../top-nav/top-nav.component';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     SearchCriteriaComponent,
     MovieListComponent,
     WatchlistPageComponent,
-    TopNavComponent
+    TopNavComponent,
   ],
-  imports: [
-    CommonModule,
-    CoreRoutingModule,
-  ],
+  imports: [CommonModule, CoreRoutingModule, FormsModule],
   exports: [
     SearchCriteriaComponent,
     MovieListComponent,
     WatchlistPageComponent,
-    TopNavComponent
-  ]
+    TopNavComponent,
+  ],
 })
-export class CoreModule {
-
- }
+export class CoreModule {}
