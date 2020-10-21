@@ -14,7 +14,8 @@ export class SearchCriteriaComponent implements OnInit {
   movieInfo: any[] = [];
   newArray: any[] = [];
   genresChecked = [];
-  years = [];
+  searchTitle: string = null;
+  years = [null];
   movieLengthBeginning;
   movieLengthEnd;
 
@@ -113,5 +114,9 @@ export class SearchCriteriaComponent implements OnInit {
       }
     }
     console.log(this.genresChecked);
+  }
+
+  resetTitleSearch() {
+    this.searchTitle = '';
   }
 }
