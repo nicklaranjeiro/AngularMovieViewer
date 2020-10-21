@@ -6,7 +6,7 @@
         id="searchResults"
         placeholder="Search by Title"
         name="searchTitle"
-        ngModel
+        [(ngModel)]="searchTitle"
       />
       <button id="searchButton" type="submit">
         <img src="./../../assets/icon-search.svg" />
@@ -82,8 +82,10 @@
     </div>
 
     <div class="buttonsContainer">
-      <button id="submitButton">Submit</button>
-      <button id="clearButton">Clear</button>
+      <button id="submitButton" type="submit">Submit</button>
+      <button id="clearButton" type="reset" (click)="resetTitleSearch()">
+        Clear
+      </button>
     </div>
   </form>
 </div>
