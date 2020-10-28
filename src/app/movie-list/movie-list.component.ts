@@ -17,7 +17,7 @@ export class MovieListComponent implements OnInit {
 
   ngOnInit(): void {
     this.getApiService.getGenres().subscribe((result: any) => {
-      console.log('result', result);
+      ////console.log('result', result);
       this.genresArray = result.genres;
     });
 
@@ -48,13 +48,13 @@ export class MovieListComponent implements OnInit {
 
   //Uses the ID of the movie and finds the movie in the list they selected and sends their info along with it using a state
   routeToDetails(id) {
-    console.log(this.movieInfo);
+    //console.log(this.movieInfo);
     const data = this.movieInfo.find((x) => x.id === id);
     this.router.navigateByUrl('/movie-details', {
       state: {
         data: data,
       },
     });
-    //console.log('data', data);
+    ////console.log('data', data);
   }
 }

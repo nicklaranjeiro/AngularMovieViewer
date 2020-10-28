@@ -9,14 +9,14 @@
         [(ngModel)]="searchTitle"
       />
       <button id="searchButton" type="submit">
-        <img src="/assets/icon-search.svg" />
+        <img src="./assets/icon-search.svg" />
       </button>
     </div>
   </form>
 
   <form #searchByFilter="ngForm" (ngSubmit)="filterSearch(searchByFilter)">
     <h3 class="criteriaHeading">
-      <img src="/assets/icon-genre.svg" class="headerImage" />
+      <img src="./assets/icon-genre.svg" class="headerImage" />
       Genre
     </h3>
 
@@ -37,7 +37,7 @@
 
     <div class="releaseDateContainer">
       <h3 class="criteriaHeading">
-        <img src="/assets/icon-genre.svg" class="headerImage" />
+        <img src="./assets/icon-genre.svg" class="headerImage" />
         Release Date
       </h3>
       <div class="yearToYearContainer">
@@ -57,7 +57,7 @@
 
     <div class="runTimeContainer">
       <h3 class="criteriaHeading">
-        <img src="/assets/icon-duration.svg" class="headerImage" />
+        <img src="./assets/icon-duration.svg" class="headerImage" />
         Run Time
       </h3>
       <ul>

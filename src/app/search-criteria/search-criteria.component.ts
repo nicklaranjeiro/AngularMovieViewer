@@ -26,13 +26,13 @@ export class SearchCriteriaComponent implements OnInit {
     }
     //On initializing gets movies and the genres with no filters or searches
     this.getApiService.getMovies().subscribe((result: any) => {
-      console.log('result', result);
+      //console.log('result', result);
       this.movieInfo = result.results;
-      console.log(this.movieInfo);
+      //console.log(this.movieInfo);
     });
 
     this.getApiService.getGenres().subscribe((result: any) => {
-      console.log('result', result);
+      //console.log('result', result);
       this.genresArray = result.genres;
     });
   }
@@ -48,7 +48,7 @@ export class SearchCriteriaComponent implements OnInit {
   }
 
   filterSearch(form: NgForm) {
-    console.log(form.value);
+    //console.log(form.value);
     //Based on run time filters you need to get correct movie length like short and average length, only long movies etc.
     if (
       form.value.shortLength == true &&
@@ -97,7 +97,7 @@ export class SearchCriteriaComponent implements OnInit {
         this.movieLengthEnd
       )
       .subscribe((result: any) => {
-        console.log(result.results);
+        //console.log(result.results);
         this.movieInfo = result.results;
       });
   }
@@ -113,7 +113,7 @@ export class SearchCriteriaComponent implements OnInit {
         }
       }
     }
-    console.log(this.genresChecked);
+    //console.log(this.genresChecked);
   }
 
   resetTitleSearch() {

@@ -15,7 +15,7 @@ export class MovieDetailComponent implements OnInit {
     this.movieDetails = this.activatedRoute.getCurrentNavigation().extras.state[
       'data'
     ];
-    console.log(this.movieDetails);
+    ////console.log(this.movieDetails);
   }
 
   ngOnInit(): void {
